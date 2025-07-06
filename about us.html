@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <style>
+        body,h1{
+            margin: 0;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height:500px;
+            background-image: url(/Malaysia.jpg);
+            font-size: 50px;
+            color: white;
+        }
+        .description{
+            margin: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(54, 165, 224);
+
+        }
+        .des-sub{
+            background-color: skyblue;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+
+        }
+        .services{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 10px;
+        }
+        .row{
+            flex-direction: column;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ser-sub{
+            flex: 1;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: #6af483;
+            color: rgb(75, 143, 244);
+            border-radius: 50px;
+        }
+        .ser-sub p{
+            color: white;
+            font-weight: 700;
+        }
+        .service h1{
+            color:  rgb(75, 143, 244);
+            text-align: center;
+        }
+        @media (width < 600px) {
+          .services{
+            flex-direction: column;
+          }
+          .services h1{
+            font-size: 25px;
+          }
+          .title{
+            background-size: cover;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>About us</h1>
+        </div>
+        <div class="description">
+            <div class="des-sub">
+                <h1>Who We Are
+                </h1>
+                <p>Welcome to [Your Company Name], your trusted travel partner for unforgettable journeys. With years of experience in the tourism industry, we specialize in creating personalized travel experiences across [mention destinations, e.g., Malaysia, Southeast Asia, etc.].
+                </p>
+            </div>
+            <div class="des-sub">
+                <h1>Our Story</h1>
+                <p>Founded in [year], our passion for travel and hospitality has led us to help thousands of travelers explore new cultures, enjoy stress-free holidays, and create lifelong memories. From humble beginnings, we’ve grown into a dedicated team of travel experts.                </p>
+            </div>
+            <div class="des-sub">
+                <h1>Our Mission</h1>
+                <p>To make travel easy, safe, and enjoyable for everyone by offering tailor-made packages, excellent customer service, and expert guidance at every step.                </p>
+            </div>
+            <div class="des-sub">
+                <h1>Our Vision</h1>
+                <p>To become a leading travel agency in [region or globally], known for innovation, integrity, and exceptional service.</p>
+            </div>
+            <div class="des-sub">
+                <h1>What We Offer</h1>
+                <p>Domestic & International Tour Packages<br>
+
+                    Group Tours & Corporate Travel<br>
+                    
+                    Flight, Hotel & Transport Booking<br>
+                    
+                    Visa Assistance<br>
+                    
+                    Honeymoon & Family Packages<br>
+                    
+                    </p>
+            </div>
+        </div>
+        <div class="service">
+            <h1>Our Services</h1>
+            <div class="services">
+                <div class="row">
+                    <div class="ser-sub">
+                       <h1>Comfortable Accommodation</h1>
+                       <p>Stay in well-appointed hotels and guesthouses, selected for quality, comfort, and convenience.</p>
+                    </div>
+                    <div class="ser-sub">
+                        <h1>Seamless Transportation</h1>
+                        <p>Travel effortlessly with reliable and comfortable transport arrangements throughout your journey.</p>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="ser-sub">
+                       <h1>Curated Sightseeing Tours</h1>
+                       <p>Explore iconic landmarks and hidden gems through expertly guided cultural and historical experiences.</p>
+                    </div>
+                    <div class="ser-sub">
+                        <h1>Dining & Refreshments</h1>
+                        <p>Enjoy selection Of Local and International cuisine with carefully arranged meals and beverages.</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

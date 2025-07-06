@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            padding: 2rem;
+        }
+        .slider-cov{
+            position: relative;
+            max-width: 48rem;
+            margin: 0 auto;
+
+        }
+        .slider{
+            display: flex;
+            aspect-ratio: 16 / 9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+        .slider img{
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+        .slider-nav{
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+        .slider-nava:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="slider-cov">
+            <div class="slider">
+                <img src="./slider/1.jpg" id="1">
+                <img src="./slider/2.jpeg" id="2">
+                <img src="./slider/3.jpg" id="3">
+                <img src="./slider/5.jpg" id="4">
+                <img src="./slider/6.jpg" id="5">
+                <img src="./slider/7.jpg" id="6">
+                <img src="./slider/8.jpg" id="7">
+                <img src="./slider/9.jpg" id="8">
+                <img src="./slider/10.jpg" id="9">
+            </div>
+            <div class="slider-nav">
+                <a href="#1"></a>
+                <a href="#2"></a>
+                <a href="#3"></a>
+                <a href="#4"></a>
+                <a href="#5"></a>
+                <a href="#6"></a>
+                <a href="#7"></a>
+                <a href="#8"></a>
+                <a href="#9"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
