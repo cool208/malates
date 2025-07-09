@@ -12,6 +12,8 @@
             position: relative;
             max-width: 48rem;
             margin: 0 auto;
+            border-radius: 80px;
+            box-shadow: 6px 20x 20px black;animation: slide 10s infinite;
 
         }
         .slider{
@@ -20,11 +22,25 @@
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
+            border-radius: 20px;
+            
         }
         .slider img{
             flex: 1 0 100%;
             scroll-snap-align: start;
             object-fit: cover;
+        }
+        @keyframes slider{
+            0%{transform: translateX(0%);}
+            10%{transform: translateX(0%);}
+            20%{transform: translateX(-100%);}
+            30%{transform: translateX(-100%);}
+           40%{transform: translateX(-200%);}
+            50%{transform: translateX(-200%);}
+            60%{transform: translateX(-300%);}
+            70%{transform: translateX(-300%);}
+            80%{transform: translateX(-400%);}
+            90%{transform: translateX(-400%);}
         }
         .slider-nav{
             display: flex;
@@ -46,34 +62,150 @@
         .slider-nava:hover{
             opacity: 1;
         }
+        .all h1{
+            text-align: center;
+            color: gold;
+        }
+        .all-intro p{
+            color: grey;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .all-intro{
+            display: flex;
+            margin: 50px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            border-radius: 20px;
+        }
+        .intro-img{
+            flex: 1;
+            margin-right: 20px;
+        }
+        .intro-text{
+            flex: 1;
+        }
+        .intro-text p{
+            color: gray;
+        }
+       /* .img-img img{
+            position: relative;
+        }
+        .cap{
+            position: absolute;
+            bottom: 0;
+            top: 180%;
+            
+        }*/
+
+.title{
+    background-image: url(./slider/1.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0;
+}
+.all-cho{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 10px;
+}
+.cho-img img{
+    border-radius: 20px;
+    height: 350px;
+}
+.cho-text{
+    color: gray;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.img-img{
+    display: flex;
+    justify-content: end;
+    background-image: url(/Malaysia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    text-align: end;
+    align-items: end;
+    padding: 10px;
+    color: whitesmoke;
+}
     </style>
 </head>
 <body>
+    <div class="title"></div>
+    
+    <div class="all">
+            <h1> Welcome to Malaysian Holiday</h1>
+    <div class="us">
+        <div class="all-intro">
+            <div class="intro-img">
+                <div class="img-img">
+                <h2 class="cap">Your Gateway to Unforgettable Adventures in Malaysia </h2>
+                </div>
+            </div>
+            <div class="intro-test">
+                
+                <p>Discover the beauty, culture, and warmth of Malaysia with Malaysian Holidays. From pristine beaches and lush rainforests to vibrant cities and historic landmarks — we bring you closer to the best that Malaysia has to offer.
+                </p>
+            </div>
+        </div>
+        <div class="all-cho">
+            <div class="cho-text">
+                <h1>Why Travel With Us?</h1>
+                <p>✅ Tailor-Made Tours: From budget to luxury, we design holidays to suit every traveler.<br><br>
+                    ✅ Expert Local Guides: Travel with passionate professionals who know Malaysia inside-out.<br><br>
+                    ✅ 24/7 Support: We’re here to help you at every step of your journey.<br><br>
+                    ✅ All-in-One Services: Flights, accommodations, transport, and tours – all taken care of!<br>
+                    
+                    </p>
+            </div>
+            <div class="cho-img">
+                <img src="/slider/3.jpg">
+            </div>
+        </div>
+       
+    </div>
     <section class="main">
         <div class="slider-cov">
             <div class="slider">
                 <img src="./slider/1.jpg" id="1">
                 <img src="./slider/2.jpeg" id="2">
+                <img src="./slider/8.jpg" id="7">
                 <img src="./slider/3.jpg" id="3">
                 <img src="./slider/5.jpg" id="4">
                 <img src="./slider/6.jpg" id="5">
                 <img src="./slider/7.jpg" id="6">
-                <img src="./slider/8.jpg" id="7">
+               
                 <img src="./slider/9.jpg" id="8">
                 <img src="./slider/10.jpg" id="9">
             </div>
             <div class="slider-nav">
                 <a href="#1"></a>
                 <a href="#2"></a>
+                <a href="#7"></a>
                 <a href="#3"></a>
                 <a href="#4"></a>
                 <a href="#5"></a>
                 <a href="#6"></a>
-                <a href="#7"></a>
                 <a href="#8"></a>
                 <a href="#9"></a>
             </div>
         </div>
     </section>
+    </div>
 </body>
 </html>
